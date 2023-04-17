@@ -1,0 +1,127 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.8rem;
+  top: 0;
+  position: sticky;
+}
+
+.navbar-logo {
+  height: 2rem;
+  padding: 1rem 2rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 1px 2px rgba(0 0 0 / 8%), 0 4px 12px rgba(0 0 0 / 5%);
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+}
+.search-bar:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s;
+}
+
+.search-bar-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-right: 1.5px solid var(--grey);
+  padding-right: 0.5rem;
+}
+
+.search-bar-text1 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--font-grey);
+  padding-right: 0.5rem;
+}
+
+.search-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme);
+  padding: 0.25rem;
+  margin-right: -5px;
+  border-radius: 50%;
+  color: white;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+
+.profile-text {
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.profile-text:hover {
+  background-color: var(--light-grey);
+}
+
+.globe-div {
+  display: flex;
+  padding: 0.8rem;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.globe-div:hover {
+  background-color: var(--light-grey);
+}
+
+.profile-menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid var(--grey);
+  color: var(--font-grey);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.menu-items {
+  padding: 1rem 1.1rem !important ;
+  width: 260px;
+  height: 45px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar-logo,
+  .search-bar,
+  .profile-container {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid var(--grey);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}

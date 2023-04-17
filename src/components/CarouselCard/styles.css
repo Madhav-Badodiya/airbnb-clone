@@ -1,0 +1,25 @@
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselCard .MuiMobileStepper-root {
+  opacity: 0;
+  transition: all ease 1000ms;
+}
+
+.carouselCard:hover .MuiMobileStepper-root {
+  opacity: 1;
+}
+
+.carouselCard:hover .MuiMobileStepper-root-dotActive {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .carouselCard {
+    left: 15px;
+  }
+}
